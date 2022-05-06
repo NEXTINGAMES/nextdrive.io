@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <SCRIPT language="JavaScript">
+    function myFunction()
+    {
+        var un = document.forms["myForm"]["Uname"].value;
+        var pw = document.forms["myForm"]["pass"].value;
+        if(un=="Leo" && pw=="12Nitva01&")
+        {
+            window.location.href="Untitled-1.html";
+        }
+        else
+        {
+            alert("Invalid Username and password");
+        }
+    }
+       
+    
+    
+    </SCRIPT>
+
+    <title>Login to nextdrive</title>
+    <link rel="icon" href="images/logo1.png"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="div1">
+    <form name="myForm" method="post">
+        <label>Username</label>
+        <br>
+        <input type="text" name="Uname" class="inputText" placeholder="User Name">
+        <br>
+        <label>Password</label>
+        <input type="password" name="pass" class="inputText" placeholder="Password">
+        <br>
+        <input type="button" name="log" id="logButton" value="Login" onclick="myFunction()">
+
+    </div>
+    </form>
+    <!--Script-->
+    <script src="script.js"></script>
+</body>
+</html>
